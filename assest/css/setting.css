@@ -1,0 +1,24 @@
+body{
+    background:#eef1f6;
+    font-family:'Segoe UI',sans-serif;
+}
+.container{
+    max-width:800px;
+}
+.card{
+    border-radius:16px;
+    border:1px solid #dee2e6;
+}
+.card h5{
+    font-weight:600;
+}
+.btn-primary{background:#243b55;border:none}
+.btn-primary:hover{background:#1b2f45}
+.logout-btn{
+    background:#dc3545;
+    border:none;
+}
+.logout-btn:hover{background:#bb2d3b}
+@media(max-width:576px){
+    h4{text-align:center}
+}

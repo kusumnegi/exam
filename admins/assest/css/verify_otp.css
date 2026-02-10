@@ -1,0 +1,29 @@
+body{
+    background:linear-gradient(135deg,#141e30,#243b55);
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-family:Segoe UI;
+}
+.card{
+    max-width:420px;
+    width:100%;
+    border-radius:16px;
+    box-shadow:0 15px 35px rgba(0,0,0,.25);
+}
+.form-control{
+    text-align:center;
+    font-size:22px;
+    letter-spacing:6px;
+}
+.resend{
+    border:none;
+    background:none;
+    font-weight:600;
+    color:#0d6efd;
+}
+.resend:disabled{
+    color:#999;
+    cursor:not-allowed;
+}

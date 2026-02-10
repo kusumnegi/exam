@@ -1,0 +1,195 @@
+body {
+      background: #eef1f6;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+    }
+
+    /* ===== NAVBAR ===== */
+    .navbar {
+      background: #1f2d3d;
+      padding: .6rem 1rem;
+    }
+
+    .navbar .container-fluid {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: nowrap;
+      /* 🔥 MOST IMPORTANT FIX */
+    }
+
+    /* BRAND */
+    .navbar-brand {
+      color: #fff;
+      font-weight: 600;
+      font-size: 16px;
+      white-space: nowrap;
+      flex-shrink: 0;
+      /* 🔥 never move to next line */
+      margin: 0;
+    }
+
+    /* RIGHT AREA */
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex: 1;
+      /* 🔥 takes remaining space */
+      min-width: 0;
+    }
+
+    /* SEARCH */
+    .search-box {
+      position: relative;
+      flex: 1;
+      /* 🔥 mobile responsive */
+      max-width: 260px;
+    }
+
+    .search-box input {
+      width: 100%;
+      padding: 7px 34px 7px 12px;
+      font-size: 14px;
+      border-radius: 6px;
+    }
+
+    .search-box i {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #6c757d;
+      pointer-events: none;
+    }
+
+    /* SEARCH SUGGESTIONS */
+    #suggestions {
+      top: 110%;
+      z-index: 999;
+    }
+
+    /* ICONS */
+    .user-icon,
+    .setting-icon {
+      color: #fff;
+      font-size: 20px;
+      flex-shrink: 0;
+      /* 🔥 icon never wraps */
+      display: flex;
+      align-items: center;
+    }
+
+    .user-icon:hover,
+    .setting-icon:hover {
+      color: #ced4da;
+    }
+
+    /* ===== EXAM CARDS ===== */
+    .exam-card {
+      background: #fff;
+      border-radius: 18px;
+      overflow: hidden;
+      border: 1px solid #dbe3ec;
+      transition: .25s
+    }
+
+    .exam-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, .12)
+    }
+
+    .exam-img {
+      height: 180px;
+      object-fit: cover
+    }
+
+    .start-btn {
+      background: #243b55;
+      border: none
+    }
+
+    .start-btn:hover {
+      background: #1b2f45
+    }
+
+    .disabled-btn {
+      background: #adb5bd !important;
+      cursor: not-allowed
+    }
+
+    .exam-modal {
+      background: #ffffff
+    }
+
+    .exam-modal-header {
+      background: #f8fafc
+    }
+
+    .exam-modal-body {
+      font-size: 14px;
+      color: #334155
+    }
+
+    .instruction-list li {
+      margin-bottom: 10px;
+      line-height: 1.6
+    }
+
+    .legend .box {
+      width: 14px;
+      height: 14px;
+      border-radius: 4px
+    }
+
+    .box.blue {
+      background: #3b82f6
+    }
+
+    .box.red {
+      background: #ef4444
+    }
+
+    .box.green {
+      background: #22c55e
+    }
+
+    .attempt-badge {
+      background: #e0e7ff;
+      color: #3730a3;
+      padding: 6px 18px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 700
+    }
+
+    @media(max-width:576px) {
+      .search-box input {
+        width: 180px
+      }
+
+      .exam-img {
+        height: 150px
+      }
+    }
+
+    /* ===== MOBILE FIX ===== */
+    @media(max-width:576px) {
+
+      .navbar-brand {
+        font-size: 14px;
+      }
+
+      .search-box {
+        max-width: none;
+        /* 🔥 full width usable */
+      }
+
+      .search-box input {
+        font-size: 13px;
+      }
+
+      .exam-img {
+        height: 150px;
+      }
+    }

@@ -1,0 +1,41 @@
+/* TOPBAR */
+.topbar {
+    background: #fff;
+    padding: 14px 22px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+/* CARDS */
+.card {
+    border-radius: 14px;
+    cursor: pointer;
+    transition: .2s
+}
+
+.card:hover {
+    transform: translateY(-4px)
+}
+
+.stat-icon {
+    font-size: 34px;
+    opacity: .25
+}
+
+/* MOBILE */
+@media(max-width:768px) {
+    .sidebar {
+        left: -260px
+    }
+
+    .sidebar.show {
+        left: 0;
+        z-index: 999
+    }
+
+    .main {
+        margin-left: 0
+    }
+}

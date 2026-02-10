@@ -1,0 +1,43 @@
+body {
+    background: #f4f6f9;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.main {
+    margin-left: 260px;
+    padding: 30px
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar {
+    width: 260px;
+    min-height: 100vh;
+    background: linear-gradient(180deg, #141e30, #243b55);
+    color: #fff;
+    position: fixed;
+}
+
+.sidebar a {
+    color: #dbe2ff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 12px 18px;
+    border-radius: 8px;
+    margin-bottom: 6px;
+    transition: .2s;
+}
+
+.sidebar a:hover,
+.sidebar a.active {
+    background: rgba(255, 255, 255, .15);
+    color: #fff;
+}
+
+@media(max-width:992px) {
+    .sidebar {
+        position: relative;
+        width: 100%;
+        min-height: auto;
+    }
+}

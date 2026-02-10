@@ -1,0 +1,26 @@
+body{
+    min-height:100vh;
+    background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:15px;
+    font-family:'Segoe UI',sans-serif;
+}
+.card{
+    width:100%;
+    max-width:400px;
+    padding:28px;
+    border-radius:18px;
+    box-shadow:0 25px 60px rgba(0,0,0,.35);
+}
+.password-toggle{
+    position:absolute;
+    right:15px;
+    top:50%;
+    transform:translateY(-50%);
+    cursor:pointer;
+}
+@media(max-width:576px){
+    .card{ padding:22px }
+}

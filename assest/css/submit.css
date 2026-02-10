@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box
+}
+
+body {
+    margin: 0;
+    background: #f6f7f9;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial;
+    color: #111827;
+}
+
+/* ===== LAYOUT ===== */
+.page {
+    max-width: 920px;
+    margin: 48px auto;
+    padding: 0 24px;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    padding: 40px;
+}
+
+/* ===== HEADER ===== */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.header h1 {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0 0 6px;
+}
+
+.header p {
+    margin: 0;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+.score {
+    text-align: right;
+}
+
+.score .value {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.score.pass {
+    color: #047857
+}
+
+.score.fail {
+    color: #b91c1c
+}
+
+/* ===== DIVIDER ===== */
+.divider {
+    height: 1px;
+    background: #e5e7eb;
+    margin: 32px 0;
+}
+
+/* ===== STATS ===== */
+.stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.stat {
+    padding: 20px;
+    border-radius: 8px;
+    background: #fafafa;
+    border: 1px solid #e5e7eb;
+}
+
+.stat span {
+    display: block;
+    font-size: 13px;
+    color: #6b7280;
+    margin-bottom: 6px;
+}
+
+.stat b {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.badge {
+    font-size: 13px;
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-weight: 600;
+}
+
+.badge.pass {
+    background: #ecfdf5;
+    color: #047857;
+}
+
+.badge.fail {
+    background: #fef2f2;
+    color: #b91c1c;
+}
+
+.link {
+    font-size: 14px;
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.link:hover {
+    text-decoration: underline
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:768px) {
+    .header {
+        flex-direction: column
+    }
+
+    .score {
+        text-align: left
+    }
+
+    .stats {
+        grid-template-columns: repeat(2, 1fr)
+    }
+}

@@ -1,0 +1,15 @@
+.card {
+    border-radius: 12px
+}
+
+.badge-active {
+    background: #dcfce7;
+    color: #166534 !important;
+    font-weight: 600
+}
+
+@media(max-width:992px) {
+    .main {
+        margin-left: 0
+    }
+}

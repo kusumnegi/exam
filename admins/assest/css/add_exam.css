@@ -1,0 +1,27 @@
+.page-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 25px
+}
+
+.q-card {
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 18px
+}
+
+.q-title {
+    font-weight: 600;
+    margin-bottom: 12px
+}
+
+.option-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px
+}
+
+.option-label {
+    font-weight: 600;
+    width: 22px
+}
